@@ -17,15 +17,15 @@
         </p>
 
         <a href="mailto: manash.81142615@gmail.com" target="_blank" class="links">
-            <img src="%sveltekit.assets%/email.png" alt="eml">
+            <img src="/link_icons/email.png" alt="eml" class="link_img">
         </a>
 
         <a href="https://www.linkedin.com/in/manash-prajapati/" target="_blank" rel="noreferrer" class="links">
-            <img src="%sveltekit.assets%/linkedin.png" alt="lin">
+            <img src="/link_icons/linkedin.png" alt="lin" class="link_img">
         </a>
 
         <a href="https://github.com/Manash-sth" target="_blank" rel="noreferrer" class="links">
-            <img src="%sveltekit.assets%/github.png" alt="git">
+            <img src="/link_icons/github.png" alt="git" class="link_img">
         </a>
     </div>
 
@@ -49,13 +49,18 @@
         align-items: center;
         justify-content: space-between;
         bottom: 0;
-        position: absolute;
+        position: fixed;
         margin-left: 1rem;
         margin-bottom: 1rem;
     }
 
     .links {
         margin-left: 1rem;
+    }
+    
+    .link_img {
+        width: 2rem;
+        height: 2rem;   
     }
     
 
