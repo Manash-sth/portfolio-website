@@ -3,41 +3,47 @@
 </script>
 
 <center>
-    <div id="home_div">
-        <h3 id="sub_txt">
-            Hey, You've reached Manash...
-        </h3>
+    <div id="main_show">
+        
+        <div id="opts">
+            <a href="#contact_div" class="opts_link">
+                <p>Get in touch</p>
+            </a>
+            
+            <a href="#about_div" class="opts_link">
+                <p>About me</p>
+            </a>
+            
+            <a href="#home_div" class="opts_link">
+                <p>Hello</p>
+            </a>
+        </div>
+        
+        <div id="center_stuffs">
+            <div id="home_div">
+                <h3 id="sub_txt">
+                    Hey, You've reached Manash...
+                </h3>
+            
+                <h1 id="hello">
+                    HELLO WORLD!
+                </h1>
+            </div>
     
-        <h1 id="hello">
-            HELLO WORLD!
-        </h1>
+            <div id="about_div">
+                <h1 id="about">
+                    About Me
+                </h1>
+            </div>
+        
+            <div id="contact_div">
+                <h1 id="get">
+                    Get In Touch
+                </h1>
+            </div>
+        </div>
     </div>
 
-    <div id="opts">
-        <a href="#get" class="opts_link">
-            <p>Get in touch</p>
-        </a>
-
-        <a href="#about" class="opts_link">
-            <p>About me</p>
-        </a>
-
-        <a href="#hello" class="opts_link">
-            <p>Hello</p>
-        </a>
-    </div>
-
-    <div id="about_div">
-        <h1 id="about">
-            About Me
-        </h1>
-    </div>
-
-    <div id="contact_div">
-        <h1 id="get">
-            Get In Touch
-        </h1>
-    </div>
 
     <div id="connect_ico">
         <p id="reach_me">
@@ -93,17 +99,15 @@
 
     #opts {
         display: flex;
-        align-items: center;
         position: fixed;
-        left: 0;
-        top: 20rem;
-        justify-content: space-between;
-        transform: rotate(270deg);
+        left: 15rem;
+
     }
 
     .opts_link {
         margin-right: 2rem;
         text-decoration: none;
+        margin: 20px;
 
     }
 
@@ -118,6 +122,58 @@
     #contact_div {
         height: 100vh;
     }
+
+    #center_stuffs {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #main_show {
+        display: flex;
+        flex-direction: column;
+    }
     
+    @media only screen and (max-width: 1400px) {
+        #opts {
+            left: 10rem;
+        }
+
+        h1 {
+            font-size: 6rem;
+        }
+    }
+
+    @media only screen and (min-width: 1000px) {
+        #opts {
+            top: 30rem;
+            transform: rotate(270deg);
+            transform-origin: left bottom 0;
+        }
+    }
+
+    @media only screen and (max-width: 1000px){
+        #center_stuffs {
+            margin-top: 10rem;
+        }
+
+        #opts {
+            left: 0;
+            top: 0;
+            width: 100%;
+            background-color: black;
+            justify-content: center;
+
+        }
+    }
+
+    @media only screen and (max-width: 800px) {
+        /* #opts {
+        } */
+
+        h1 {
+            font-size: 3rem;
+        }
+    }
+
 
 </style>
