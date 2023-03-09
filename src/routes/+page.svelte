@@ -3,13 +3,41 @@
 </script>
 
 <center>
-    <h3 id="sub_txt">
-        Hey, You've reached Manash...
-    </h3>
+    <div id="home_div">
+        <h3 id="sub_txt">
+            Hey, You've reached Manash...
+        </h3>
+    
+        <h1 id="hello">
+            HELLO WORLD!
+        </h1>
+    </div>
 
-    <h1 id="main_text">
-        HELLO WORLD!
-    </h1>
+    <div id="opts">
+        <a href="#get" class="opts_link">
+            <p>Get in touch</p>
+        </a>
+
+        <a href="#about" class="opts_link">
+            <p>About me</p>
+        </a>
+
+        <a href="#hello" class="opts_link">
+            <p>Hello</p>
+        </a>
+    </div>
+
+    <div id="about_div">
+        <h1 id="about">
+            About Me
+        </h1>
+    </div>
+
+    <div id="contact_div">
+        <h1 id="get">
+            Get In Touch
+        </h1>
+    </div>
 
     <div id="connect_ico">
         <p id="reach_me">
@@ -61,6 +89,34 @@
     .link_img {
         width: 2rem;
         height: 2rem;   
+    }
+
+    #opts {
+        display: flex;
+        align-items: center;
+        position: fixed;
+        left: 0;
+        top: 20rem;
+        justify-content: space-between;
+        transform: rotate(270deg);
+    }
+
+    .opts_link {
+        margin-right: 2rem;
+        text-decoration: none;
+
+    }
+
+    #home_div {
+        height: 100vh;
+    }
+
+    #about_div {
+        height: 100vh;
+    }
+
+    #contact_div {
+        height: 100vh;
     }
     
 
