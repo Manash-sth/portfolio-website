@@ -14,7 +14,7 @@
                 <p>About me</p>
             </a>
             
-            <a href="#home_div" class="opts_link">
+            <a href="#top" class="opts_link">
                 <p>Hello</p>
             </a>
         </div>
@@ -108,7 +108,7 @@
         margin-right: 2rem;
         text-decoration: none;
         margin: 20px;
-
+        scroll-margin-top: 10rem;
     }
 
     #home_div {
@@ -132,7 +132,7 @@
         display: flex;
         flex-direction: column;
     }
-    
+
     @media only screen and (max-width: 1400px) {
         #opts {
             left: 10rem;
